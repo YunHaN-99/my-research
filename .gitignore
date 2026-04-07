@@ -1,0 +1,14 @@
+# 忽略数据集和模型文件
+.csv
+.dat
+.pth
+.pt
+.h5
+.safetensors
+__pycache__
+data
+models
+
+# local environments / temporary folders
+.venv/
+.tmp_ustc_mm26/
