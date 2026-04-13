@@ -1,14 +1,24 @@
-# 忽略数据集和模型文件
-.csv
-.dat
-.pth
-.pt
-.h5
-.safetensors
-__pycache__
-data
-models
+# Python cache / local execution artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
 
-# local environments / temporary folders
+# Local data / model artifacts
+data/
+models/
+*.dat
+*.pth
+*.pt
+*.h5
+*.safetensors
+
+# Local environments / temporary folders
 .venv/
 .tmp_ustc_mm26/
+Microsoft/
+outputs/hw2_op2/_tmp_*
+
+# OS noise
+Thumbs.db
+.DS_Store
