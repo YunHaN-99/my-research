@@ -3,15 +3,36 @@
 ## 目的
 把当前仓库中已经可以直接作为中期检查附件的材料，与仍待补充的材料分开列出，避免中期提交时临时翻目录。
 
-## 1. 已可直接纳入附件的材料
+## 1. 统一口径摘要
+这份附件清单服务于同一套阶段判断：A1 / A2 主案例闭环已完成，中期材料收口进行中。A2 在附件包中的统一写法应为：“低秩图像任务族下，已完成范围收束并完成主案例闭环的 `chapter5 rslt_inpainting` 主案例”。
+
+### 已经完成什么
+- A1 主案例闭环材料已经齐备。
+- A2 主案例闭环材料已经齐备，覆盖 baseline、fixed-protocol replication、bug-repair benchmark、expanded-scope validation 与 fresh-generation replication。
+- 阶段说明、协议、metrics、代表性 run 和模板文档都已经有可提交版本。
+
+### 现在最稳能说什么
+- 当前附件包足以支撑“主案例闭环已经完成”的判断。
+- 当前附件包足以支撑“结构化 guidance 改善过程可检查性与可复查性”的判断。
+- 当前附件包不应用来支持“结构化 guidance 已显著提升最终恢复质量”的强结论。
+
+### 还没做什么
+- 题库 `v1 (>=15 题)` 还未整理为正式中期成品。
+- A3 / A4 仍处于后续扩展条目，而非当前附件包主干。
+- 统一原型和小范围试用材料尚未进入本次“已完成”附件范围。
+
+## 2. 已可直接纳入附件的主干材料
 
 ### 研究范围与阶段说明
 - `README.md`
 - `report/phase2_progress_report_2026-04-12.md`
 - `report/timeline_scope_alignment_2026-04-12.md`
 - `report/midterm_stage_summary_v0.md`
+- `report/advisor_confirmation_questions_v0.md`
+- `report/task_bank_index_v1.md`
 - `report/task_bank_status_v1.md`
 - `report/prototype_outline_v0.md`
+- `report/prototype_cli_v0.md`
 
 ### A1 主案例材料
 - `task_cards/A1_seam_carving_taskcard_v1.md`
@@ -42,7 +63,12 @@
 - `metrics/a2_expanded_scope_eval_v0.csv`
 - `metrics/a2_expanded_scope_perf_v0.csv`
 
+### 扩展条目占位材料
+- `task_cards/A3_taskcard_v0.md`
+- `task_cards/A4_taskcard_v0.md`
+
 ### 模板与方法材料
+- `run_research_case.py`
 - `report/prompt_template_library_v1.md`
 - `report/structured_modeling_checklist_v1.md`
 - `report/error_taxonomy_and_feedback_rules_v1.md`
@@ -52,7 +78,7 @@
 - `runs/a2_guidance_run_template_v0.md`
 - `runs/a2_bug_repair_run_template_v0.md`
 
-## 2. 建议作为“证据样例”附上的材料
+## 3. 建议作为“证据样例”附上的材料
 - A1 代表性 run：
   - `runs/2026-03-26_run_006_a1_direct_answer_baseline.md`
   - `runs/2026-03-26_run_007_a1_plain_guidance_baseline.md`
@@ -65,25 +91,26 @@
   - `runs/2026-04-12_run_052_a2_direct_answer_expanded_scope.md`
   - `runs/2026-04-12_run_055_a2_direct_answer_fresh_generation.md`
 
-## 3. 当前仍待补充的中期材料
+## 4. 当前仍待补充、但不应写成“已完成”的中期材料
 
 ### 尚未完成
 - 题库 `v1 (>=15 题)` 的实体扩充
-- A3 / A4 扩展条目本体
+- A3 / A4 扩展条目的 `requirement`、`taskcard_v1` 与正式实验本体
 - 可演示的统一原型实现
 - 中期提交版附件清单的最终命名与排序
 
 ### 建议最小补法
-- 先用现有 `task_bank_status_v1.md` 说明当前已有主案例和待扩展案例。
-- 先用现有 `prototype_outline_v0.md` 说明当前自动化脚本链路与后续 CLI/Notebook 方向。
-- A3 / A4 暂时先写扩展条目，不必立即做完整实验。
+- 先用现有 `task_bank_index_v1.md` 与 `task_bank_status_v1.md` 说明当前题库骨架。
+- 先用现有 `prototype_outline_v0.md` 说明当前自动化脚本链路与后续 CLI / Notebook 方向。
+- A3 / A4 当前先保留占位 task card，不必立即做完整实验。
 
-## 4. 提交前复核项
+## 5. 提交前复核项
 - 所有引用的 CSV 都能被打开。
 - 所有报告中的 run 编号都能回指到 `runs/` 与 `outputs/`。
-- A2 口径统一写成当前主案例，不再混写成 “SVD 图像压缩”。
+- A2 口径统一写成“低秩图像任务族下，已完成范围收束并完成主案例闭环的 `chapter5 rslt_inpainting` 主案例”。
 - 每个结论都能回指至少 1 份 report 和 1 份 metrics 文件。
+- “已完成”与“后续扩展”必须分开排序，不混放在同一组附件里。
 
-## 5. 当前判断
+## 6. 当前判断
 - 中期包的主干材料已经够用。
 - 现在缺的不是继续跑同类实验，而是把“题库说明 / 原型说明 / 附件排序”补齐。

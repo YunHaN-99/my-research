@@ -2,12 +2,14 @@
 
 date: 2026-04-12
 repo_latest_commit: 2026-04-07 7eac855 + working tree updates on 2026-04-12
-stage_judgment: Phase 2 closure plus fresh-generation replication complete; midterm-package consolidation in progress
+stage_judgment: A1/A2 main-case closure complete under current frozen scope; midterm-package consolidation in progress
 
 ## 一句话判断
 项目已经完成 A1 闭环包，以及当前口径下 A2 `chapter5 rslt_inpainting` 主案例的 baseline、fixed-protocol replication、bug-repair benchmark、expanded-scope validation 与 fresh-generation replication。当前更合理的下一步不是继续追加同类 rerun，而是统一 Timeline 口径、收束中期材料，并明确 P2/P3 的未完成项。
 
-## 当前阶段判断
+## 统一口径摘要
+
+### 已经完成什么
 - 主线位置：A1 / A2 main-case closure completed
 - 完成度判断：
   - A1 main experiment: completed
@@ -20,10 +22,16 @@ stage_judgment: Phase 2 closure plus fresh-generation replication complete; midt
   - A2 bug-repair benchmark: completed
   - A2 expanded-scope validation: completed
   - A2 fresh-generation replication: completed
-- 当前主要缺口：
-  - Timeline 原始 A2 文案与仓库当前 A2 定义尚未在中期材料里彻底统一
-  - 模板库 / 结构化检查清单 / 错误分类规则仍缺少集中版文档
-  - A3 / A4 扩展条目、统一原型、试用数据仍未启动
+
+### 现在最稳能说什么
+- A1 / A2 两个主案例都已经闭环，当前仓库的主线判断不是“还在试跑”，而是“已形成可复查的中期主干”。
+- 当前最稳妥的研究结论是：结构化 guidance 主要改善可检查性、根因说明与回归说明，而不是稳定拉开最终质量。
+- 对 A2 来说，当前最强证据来自 fixed-protocol、expanded-scope 与 fresh-generation 三层一致性，而不是继续追加同协议 rerun。
+
+### 还没做什么
+- Timeline 原始 A2 文案与仓库当前 A2 定义尚未在中期材料里彻底统一。
+- 模板库 / 结构化检查清单 / 错误分类规则仍缺少集中版文档。
+- A3 / A4 已完成题库占位接入，但 requirement / 正式实验、统一原型、试用数据仍未启动。
 
 ## 已完成工作
 
@@ -111,21 +119,23 @@ stage_judgment: Phase 2 closure plus fresh-generation replication complete; midt
 - 48/48 expanded-scope cases 都是 `output_ok = 1`。
 - 全部 16 个 image/corruption cases 在三种 mode 下仍只出现 1 组 `(PSNR, SSIM, RSE)`，说明当前差异仍主要在过程痕迹而非最终质量。
 
-### 5. A2 scope 与 Timeline 原始文案存在偏差，但当前主案例已形成稳定闭环
+### 5. A2 范围收束说明
 - `Timeline.docx` 原始文案把 A2 写成 “SVD 图像压缩”。
 - 仓库当前实际主线已收束为“低秩图像任务族下，最终聚焦 `chapter5 rslt_inpainting` 的灰度图像修复主案例”。
-- 这意味着：
-  - 按当前仓库口径，A2 主案例已完成。
-  - 按 Timeline 原始字面，A2 存在名称和任务边界漂移，应该在中期材料中明确解释为“范围收束”，而不是简单写成“原计划 A2 未做”。
+- 这次收束的含义是：
+  - 没有脱离原始低秩 / SVD 研究方向。
+  - 也没有宣称整个低秩图像方向都已完成。
+  - 当前已经完成的是：在冻结口径下完成 A2 主案例闭环。
+- 因此，中期材料中应把 A2 写成“已完成范围收束并完成主案例闭环”，而不是简单写成“原计划 A2 未做”。
 
 ## 当前未完成项
 
 ### 1. 中期口径收口尚未完成
 - Timeline 原始 A2 文案需要与当前主案例说明同步。
-- A1/A2 现有 prompt、task card、bug-repair 资产需要整理为模板库 / 检查清单 / 错误分类文档。
+- A1 / A2 现有 prompt、task card、bug-repair 资产需要整理为模板库 / 检查清单 / 错误分类文档。
 
 ### 2. Timeline 中期后的内容尚未启动
-- A3 / A4 扩展条目尚未补入题库。
+- A3 / A4 已补入占位 task card，但尚未进入 requirement / 协议 / 正式实验阶段。
 - “输入题目 -> 结构化表示 -> 代码骨架 -> 自检 -> 结果记录”的统一原型尚未形成用户可演示版本。
 - 小范围试用、学生反馈与量化对照数据尚未启动。
 
