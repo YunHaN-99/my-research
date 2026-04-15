@@ -13,7 +13,7 @@
 - A3 / A4 已各冻结 `1` 个首发条目，并补齐 `requirement + taskcard_v1`，当前可诚实表述为“主案例已闭环，题库主干已成型，中期题库已补到够用版本”。
 - 最小 CLI 原型已建立：`python run_research_case.py --case A2 --mode plain_guidance --track baseline` 可直接输出 prompt、protocol、run 文档和 metrics 摘要。
 - 导师演示入口已补出：`python run_research_case.py --demo advisor` 会按“输入题目 -> 结构化表示 -> prompt 选择 -> run 结果 -> metrics 摘要”输出固定演示链条。
-- 小样本试用 `v0` 已设计：baseline vs 过程化流程的试用方案、参与者表单、评分表、记录模板和 CSV 数据结构已预埋。
+- 小样本试用方案已冻结：baseline vs 过程化流程的 `v0` 试用方案、参与者表单、评分表、记录模板和 CSV 数据结构已预埋。
 - 当前中期重点不是继续追加同类 rerun，而是收束模板库、检查清单、错误分类、题库页和原型入口。
 
 ## 当前冻结的研究结论
@@ -96,5 +96,5 @@ task_cards / prompts / runs / metrics / report / pilot / solutions / outputs / r
 ## 下一步
 1. 把导师确认的三问发出去，尽快锁定 A2 口径、中期主轴和中期后优先级。
 2. 以当前 `16` 个正式题库条目作为中期版本，优先把题库页、模板库、检查清单、错误分类和附件包收齐。
-3. 中期后再给 A3 / A4 首发条目补固定协议、failure case 与实验链路。
-4. 在不追加同类 rerun 的前提下，用现有试用方案和演示入口把中期后的 pilot 执行面也准备好。
+3. 小样本试用方案已冻结，下一步是在中期后按这套模板执行首轮 pilot，并回填 session 记录与 CSV。
+4. 中期后再给 A3 / A4 首发条目补固定协议、failure case 与实验链路。
