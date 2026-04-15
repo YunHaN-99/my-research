@@ -111,7 +111,7 @@
 - 用途：统一记录 bug-repair benchmark 的症状、补丁、回归与指标回填。
 
 ## 6. 使用规则
-- 同一任务族内不要混用不同口径的 A2 定义；当前统一以 `chapter5 rslt_inpainting` 为主案例。
+- 同一任务族内不要混用不同口径的 A2 定义；当前统一以 `hw2-op2/src/chapter5_rslt.py::rslt_inpainting(...)` 为主案例。
 - `direct_answer / plain_guidance / coe_guided` 应始终作为固定研究级对照出现，避免临时新增模式打乱可比性。
 - bug-repair 场景要严格区分：
   - 可以给模型看的材料

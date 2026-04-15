@@ -12,7 +12,7 @@
 
 ### 当前案例
 - A1 若从 shrink 漂到 enlarge。
-- A2 若从 `chapter5 rslt_inpainting` 漂到 GUI / video / chapter7。
+- A2 若从 `hw2-op2/src/chapter5_rslt.py::rslt_inpainting(...)` 漂到 GUI / video / chapter7。
 
 ### 反馈规则
 - 先回收 scope，再看代码。

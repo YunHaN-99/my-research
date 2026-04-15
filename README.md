@@ -1,24 +1,32 @@
 # AI-for-research
 一句话目标：用 A1/A2 主案例做“过程化指导 + 结构化检查 + 纠错评估”的研究仓库。
 
+一句话阶段判断：A1 / A2 首轮主案例闭环已完成；当前中期重点是收束模板库、检查清单、错误分类、题库页和原型入口。
+
 ## 当前状态
 - A1 v1 已收尾：`direct_answer` / `plain_guidance` / `coe_guided` 主实验、固定协议复现、bug-repair benchmark 均已完成。
 - A1 failure cases 已从复查资产扩展为 9 条可评分的 bug-repair benchmark 记录。
-- A2 已锁定为 `hw2-op2` chapter5 RSLT inpainting 主案例，baseline、fixed-protocol replication、bug-repair benchmark、expanded-scope validation、fresh-generation replication 均已完成。
+- A2 当前统一表述为：低秩图像任务族下，已完成范围收束并完成主案例闭环的 `hw2-op2/src/chapter5_rslt.py::rslt_inpainting(...)` 灰度图像修复主案例。
+- A2 的 baseline、fixed-protocol replication、bug-repair benchmark、expanded-scope validation、fresh-generation replication 均已完成。
 - A2 当前已形成 15 条 guidance 主记录、60 条恢复结果记录、9 条 bug-repair 记录，以及 48 条 expanded-scope case 记录。
-- Timeline 原始文案曾把 A2 写成 “SVD 图像压缩”；当前中期口径需统一为“低秩图像任务族下，最终聚焦 `chapter5 rslt_inpainting` 主案例”。
-- 正式 task-bank 页面已建立，当前按“主案例家族 / 固定协议子任务 / failure cases”三层整理题库。
-- A3 / A4 已补入占位 task card，当前可诚实表述为“主案例已闭环，题库骨架已成型，扩展条目正在接入”。
+- 正式 task-bank 页面已建立，当前按“主案例家族 / 固定协议子任务 / failure cases”三层整理出 `16` 个中期正式条目。
+- A3 / A4 已各冻结 `1` 个首发条目，并补齐 `requirement + taskcard_v1`，当前可诚实表述为“主案例已闭环，题库主干已成型，中期题库已补到够用版本”。
 - 最小 CLI 原型已建立：`python run_research_case.py --case A2 --mode plain_guidance --track baseline` 可直接输出 prompt、protocol、run 文档和 metrics 摘要。
-- 当前阶段：A1/A2 主案例闭环已完成，下一步是题库、原型和中期材料收口，而不是继续追加同类 rerun。
+- 当前中期重点不是继续追加同类 rerun，而是收束模板库、检查清单、错误分类、题库页和原型入口。
+
+## 当前冻结的研究结论
+- `plain_guidance` / `coe_guided` 的核心优势，是提升自检覆盖、根因说明和回归说明的可复查性。
+- 在 A2 这类冻结协议任务上，结构化 guidance 未必显著改变最终恢复指标，但确实改善了过程质量与可解释性。
 
 ## 快速入口
 - [task_cards/A1_seam_carving_taskcard_v1.md](task_cards/A1_seam_carving_taskcard_v1.md)
 - [task_cards/A1_bug_repair_taskcard_v0.md](task_cards/A1_bug_repair_taskcard_v0.md)
 - [task_cards/A2_rslt_inpainting_taskcard_v1.md](task_cards/A2_rslt_inpainting_taskcard_v1.md)
 - [task_cards/A2_bug_repair_taskcard_v0.md](task_cards/A2_bug_repair_taskcard_v0.md)
-- [task_cards/A3_taskcard_v0.md](task_cards/A3_taskcard_v0.md)
-- [task_cards/A4_taskcard_v0.md](task_cards/A4_taskcard_v0.md)
+- [problems/a3_requirement.md](problems/a3_requirement.md)
+- [task_cards/A3_taskcard_v1.md](task_cards/A3_taskcard_v1.md)
+- [problems/a4_requirement.md](problems/a4_requirement.md)
+- [task_cards/A4_taskcard_v1.md](task_cards/A4_taskcard_v1.md)
 - [report/a1_eval_protocol_v0.md](report/a1_eval_protocol_v0.md)
 - [report/a1_replication_summary_v0.md](report/a1_replication_summary_v0.md)
 - [report/a1_bug_repair_protocol_v0.md](report/a1_bug_repair_protocol_v0.md)
@@ -32,6 +40,7 @@
 - [report/a2_bug_repair_summary_v0.md](report/a2_bug_repair_summary_v0.md)
 - [report/a2_expanded_scope_protocol_v0.md](report/a2_expanded_scope_protocol_v0.md)
 - [report/a2_expanded_scope_summary_v0.md](report/a2_expanded_scope_summary_v0.md)
+- [report/a2_expanded_scope_selected_entries_v1.md](report/a2_expanded_scope_selected_entries_v1.md)
 - [report/phase2_progress_report_2026-04-12.md](report/phase2_progress_report_2026-04-12.md)
 - [report/timeline_scope_alignment_2026-04-12.md](report/timeline_scope_alignment_2026-04-12.md)
 - [report/prompt_template_library_v1.md](report/prompt_template_library_v1.md)
@@ -75,6 +84,6 @@ task_cards / prompts / runs / metrics / report / solutions / outputs / run_resea
 
 ## 下一步
 1. 把导师确认的三问发出去，尽快锁定 A2 口径、中期主轴和中期后优先级。
-2. 从 A3 / A4 候选方向中各冻结 1 个首发条目，把占位 task card 往 `requirement` 和 `taskcard_v1` 推进。
-3. 继续收束 Prompt 模板库、结构化检查清单、错误分类规则和中期附件包。
+2. 以当前 `16` 个正式题库条目作为中期版本，优先把题库页、模板库、检查清单、错误分类和附件包收齐。
+3. 中期后再给 A3 / A4 首发条目补固定协议、failure case 与实验链路。
 4. 在不追加同类 rerun 的前提下，把现有 CLI 原型继续整理成更适合展示的中期入口。

@@ -4,7 +4,7 @@
 把当前仓库中已经可以直接作为中期检查附件的材料，与仍待补充的材料分开列出，避免中期提交时临时翻目录。
 
 ## 1. 统一口径摘要
-这份附件清单服务于同一套阶段判断：A1 / A2 主案例闭环已完成，中期材料收口进行中。A2 在附件包中的统一写法应为：“低秩图像任务族下，已完成范围收束并完成主案例闭环的 `chapter5 rslt_inpainting` 主案例”。
+这份附件清单服务于同一套阶段判断：A1 / A2 主案例闭环已完成，中期材料收口进行中。A2 在附件包中的统一写法应为：“低秩图像任务族下，已完成范围收束并完成主案例闭环的 `hw2-op2/src/chapter5_rslt.py::rslt_inpainting(...)` 灰度图像修复主案例”。
 
 ### 已经完成什么
 - A1 主案例闭环材料已经齐备。
@@ -17,9 +17,9 @@
 - 当前附件包不应用来支持“结构化 guidance 已显著提升最终恢复质量”的强结论。
 
 ### 还没做什么
-- 题库 `v1 (>=15 题)` 还未整理为正式中期成品。
-- A3 / A4 仍处于后续扩展条目，而非当前附件包主干。
-- 统一原型和小范围试用材料尚未进入本次“已完成”附件范围。
+- 题库 `v1` 已整理到中期够用版本，当前正式条目为 `16` 个，但仍不是结题版完整题库。
+- A3 / A4 已各冻结 `1` 个首发条目并补齐 `requirement + taskcard_v1`，但尚未进入 fixed protocol / 正式实验主线。
+- 最小 CLI 原型已经建立，但更完整的统一演示封装和小范围试用材料尚未进入本次“已完成”附件范围。
 
 ## 2. 已可直接纳入附件的主干材料
 
@@ -31,6 +31,7 @@
 - `report/advisor_confirmation_questions_v0.md`
 - `report/task_bank_index_v1.md`
 - `report/task_bank_status_v1.md`
+- `report/a2_expanded_scope_selected_entries_v1.md`
 - `report/prototype_outline_v0.md`
 - `report/prototype_cli_v0.md`
 
@@ -63,9 +64,11 @@
 - `metrics/a2_expanded_scope_eval_v0.csv`
 - `metrics/a2_expanded_scope_perf_v0.csv`
 
-### 扩展条目占位材料
-- `task_cards/A3_taskcard_v0.md`
-- `task_cards/A4_taskcard_v0.md`
+### 扩展条目首发材料
+- `problems/a3_requirement.md`
+- `task_cards/A3_taskcard_v1.md`
+- `problems/a4_requirement.md`
+- `task_cards/A4_taskcard_v1.md`
 
 ### 模板与方法材料
 - `run_research_case.py`
@@ -94,23 +97,24 @@
 ## 4. 当前仍待补充、但不应写成“已完成”的中期材料
 
 ### 尚未完成
-- 题库 `v1 (>=15 题)` 的实体扩充
-- A3 / A4 扩展条目的 `requirement`、`taskcard_v1` 与正式实验本体
-- 可演示的统一原型实现
+- A3 / A4 首发条目的固定协议、failure case 与正式实验本体
+- 更完整的统一原型封装与展示包装
 - 中期提交版附件清单的最终命名与排序
 
 ### 建议最小补法
 - 先用现有 `task_bank_index_v1.md` 与 `task_bank_status_v1.md` 说明当前题库骨架。
-- 先用现有 `prototype_outline_v0.md` 说明当前自动化脚本链路与后续 CLI / Notebook 方向。
-- A3 / A4 当前先保留占位 task card，不必立即做完整实验。
+- 用 `a2_expanded_scope_selected_entries_v1.md` 说明为什么从 16 个 expanded-scope case 中只固化 4 个正式条目。
+- 先用现有 `prototype_cli_v0.md` 与 `prototype_outline_v0.md` 说明当前最小 CLI 已落地，以及后续 CLI / Notebook 方向。
+- A3 / A4 当前已补到 requirement + taskcard_v1，不必立即做完整实验。
 
 ## 5. 提交前复核项
 - 所有引用的 CSV 都能被打开。
 - 所有报告中的 run 编号都能回指到 `runs/` 与 `outputs/`。
-- A2 口径统一写成“低秩图像任务族下，已完成范围收束并完成主案例闭环的 `chapter5 rslt_inpainting` 主案例”。
+- A2 口径统一写成“低秩图像任务族下，已完成范围收束并完成主案例闭环的 `hw2-op2/src/chapter5_rslt.py::rslt_inpainting(...)` 灰度图像修复主案例”。
 - 每个结论都能回指至少 1 份 report 和 1 份 metrics 文件。
 - “已完成”与“后续扩展”必须分开排序，不混放在同一组附件里。
 
 ## 6. 当前判断
 - 中期包的主干材料已经够用。
+- 当前题库正式条目已整理到 `16` 条，足以支撑中期展示。
 - 现在缺的不是继续跑同类实验，而是把“题库说明 / 原型说明 / 附件排序”补齐。
