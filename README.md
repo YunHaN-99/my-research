@@ -12,6 +12,7 @@
 - 正式 task-bank 页面已建立，当前按“主案例家族 / 固定协议子任务 / failure cases”三层整理出 `16` 个中期正式条目。
 - A3 / A4 已各冻结 `1` 个首发条目，并补齐 `requirement + taskcard_v1`，当前可诚实表述为“主案例已闭环，题库主干已成型，中期题库已补到够用版本”。
 - 最小 CLI 原型已建立：`python run_research_case.py --case A2 --mode plain_guidance --track baseline` 可直接输出 prompt、protocol、run 文档和 metrics 摘要。
+- 导师演示入口已补出：`python run_research_case.py --demo advisor` 会按“输入题目 -> 结构化表示 -> prompt 选择 -> run 结果 -> metrics 摘要”输出固定演示链条。
 - 当前中期重点不是继续追加同类 rerun，而是收束模板库、检查清单、错误分类、题库页和原型入口。
 
 ## 当前冻结的研究结论
@@ -52,6 +53,7 @@
 - [report/task_bank_status_v1.md](report/task_bank_status_v1.md)
 - [report/prototype_outline_v0.md](report/prototype_outline_v0.md)
 - [report/prototype_cli_v0.md](report/prototype_cli_v0.md)
+- [report/advisor_demo_entry_v1.md](report/advisor_demo_entry_v1.md)
 - [report/advisor_confirmation_questions_v0.md](report/advisor_confirmation_questions_v0.md)
 - [metrics/a1_guidance_eval_v0.csv](metrics/a1_guidance_eval_v0.csv)
 - [metrics/a1_codegen_perf_v0.csv](metrics/a1_codegen_perf_v0.csv)
@@ -67,6 +69,8 @@ task_cards / prompts / runs / metrics / report / solutions / outputs / run_resea
 
 ## CLI 原型入口
 - 列出支持的 case / mode / track 组合：`python run_research_case.py --list`
+- 列出支持的演示模式：`python run_research_case.py --demo list`
+- 导师演示模式：`python run_research_case.py --demo advisor`
 - 查看 A1 baseline 摘要：`python run_research_case.py --case A1 --mode plain_guidance --track baseline`
 - 查看 A2 bug-repair 摘要：`python run_research_case.py --case A2 --mode coe_guided --track bug-repair`
 - 查看 A2 expanded-scope 摘要：`python run_research_case.py --case A2 --mode direct_answer --track expanded-scope`

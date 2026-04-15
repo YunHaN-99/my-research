@@ -34,6 +34,7 @@
 - `report/a2_expanded_scope_selected_entries_v1.md`
 - `report/prototype_outline_v0.md`
 - `report/prototype_cli_v0.md`
+- `report/advisor_demo_entry_v1.md`
 
 ### A1 主案例材料
 - `task_cards/A1_seam_carving_taskcard_v1.md`

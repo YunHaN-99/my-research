@@ -7,6 +7,7 @@
 - A1：`Seam Carving` 主案例的 baseline、fixed-protocol replication、bug-repair benchmark 和阶段总结已完成。
 - A2：低秩图像任务族下、已完成范围收束并完成主案例闭环的 `hw2-op2/src/chapter5_rslt.py::rslt_inpainting(...)` 灰度图像修复主案例，已完成 baseline、fixed-protocol replication、bug-repair benchmark、expanded-scope validation 和 fresh-generation replication。
 - 题库：已按“主案例家族 / 固定协议子任务 / failure cases”三层整理出 `16` 个中期正式条目，并补入 A2 expanded-scope 代表案例与 A3 / A4 首发条目。
+- 原型：`run_research_case.py` 已补出 `--demo advisor` 演示模式，可按固定顺序展示题目、结构化表示、prompt、run 与 metrics。
 - 配套资产：prompt、task card、run 文档、metrics、协议文档和阶段总结已形成完整证据链。
 
 ### 现在最稳能说什么
