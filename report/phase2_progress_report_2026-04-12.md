@@ -36,6 +36,7 @@ stage_judgment: A1/A2 main-case closure complete under current frozen scope; mid
 - 当前仍需要在所有对外材料中持续坚持同一 A2 口径，不再混写成早期宽标签 “SVD 图像压缩”。
 - 模板库 / 结构化检查清单 / 错误分类规则的 `v1` 文档已经补出，但还需要在中期附件包里继续统一命名和引用。
 - A3 / A4 已各冻结 `1` 个首发条目并补齐 `requirement + taskcard_v1`；更完整的固定协议、正式实验、统一原型封装和试用数据仍未启动。
+- 小样本试用的实际招募和执行尚未开始，但 baseline vs 过程化流程的 `v0` 试用方案、表单、评分表、记录模板和 CSV 数据结构已经补出。
 
 ## 已完成工作
 
@@ -142,7 +143,7 @@ stage_judgment: A1/A2 main-case closure complete under current frozen scope; mid
 ### 2. Timeline 中期后的扩展项尚未完成
 - A3 / A4 已补出首发条目的 `requirement + taskcard_v1`，但尚未进入固定协议 / 正式实验阶段。
 - `run_research_case.py` 最小 CLI 原型已经建立，但更完整的统一演示入口尚未形成。
-- 小范围试用、学生反馈与量化对照数据尚未启动。
+- 小范围试用、学生反馈与量化对照的实际数据采集尚未启动，但试用方案、表单、评分表、记录模板和 CSV 数据结构已经补出。
 
 ## 风险与边界
 - 当前 strongest evidence 仍主要覆盖 A1 单任务、固定图片、固定 `max_side=420`、固定 shrink-only 协议，以及 3 个 curated bug。

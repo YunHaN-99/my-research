@@ -19,7 +19,7 @@
 ### 还没做什么
 - 题库 `v1` 已整理到中期够用版本，当前正式条目为 `16` 个，但仍不是结题版完整题库。
 - A3 / A4 已各冻结 `1` 个首发条目并补齐 `requirement + taskcard_v1`，但尚未进入 fixed protocol / 正式实验主线。
-- 最小 CLI 原型已经建立，但更完整的统一演示封装和小范围试用材料尚未进入本次“已完成”附件范围。
+- 最小 CLI 原型已经建立，试用方案与模板也已补出；但更完整的统一演示封装以及小范围试用的实际招募与数据采集尚未进入本次“已完成”附件范围。
 
 ## 2. 已可直接纳入附件的主干材料
 
@@ -35,6 +35,7 @@
 - `report/prototype_outline_v0.md`
 - `report/prototype_cli_v0.md`
 - `report/advisor_demo_entry_v1.md`
+- `report/small_sample_pilot_plan_v0.md`
 
 ### A1 主案例材料
 - `task_cards/A1_seam_carving_taskcard_v1.md`
@@ -82,6 +83,13 @@
 - `runs/a2_guidance_run_template_v0.md`
 - `runs/a2_bug_repair_run_template_v0.md`
 
+### 试用准备材料
+- `pilot/pilot_participant_form_v0.md`
+- `pilot/pilot_scoring_sheet_v0.md`
+- `pilot/pilot_session_record_template_v0.md`
+- `metrics/pilot_session_log_template_v0.csv`
+- `metrics/pilot_session_log_codebook_v0.md`
+
 ## 3. 建议作为“证据样例”附上的材料
 - A1 代表性 run：
   - `runs/2026-03-26_run_006_a1_direct_answer_baseline.md`
@@ -100,12 +108,14 @@
 ### 尚未完成
 - A3 / A4 首发条目的固定协议、failure case 与正式实验本体
 - 更完整的统一原型封装与展示包装
+- 小范围试用的实际招募、执行与数据采集
 - 中期提交版附件清单的最终命名与排序
 
 ### 建议最小补法
 - 先用现有 `task_bank_index_v1.md` 与 `task_bank_status_v1.md` 说明当前题库骨架。
 - 用 `a2_expanded_scope_selected_entries_v1.md` 说明为什么从 16 个 expanded-scope case 中只固化 4 个正式条目。
 - 先用现有 `prototype_cli_v0.md` 与 `prototype_outline_v0.md` 说明当前最小 CLI 已落地，以及后续 CLI / Notebook 方向。
+- 用 `small_sample_pilot_plan_v0.md` 和 `pilot/`、`metrics/` 里的模板说明试用方案已经定、数据结构已经预埋。
 - A3 / A4 当前已补到 requirement + taskcard_v1，不必立即做完整实验。
 
 ## 5. 提交前复核项
@@ -118,4 +128,4 @@
 ## 6. 当前判断
 - 中期包的主干材料已经够用。
 - 当前题库正式条目已整理到 `16` 条，足以支撑中期展示。
-- 现在缺的不是继续跑同类实验，而是把“题库说明 / 原型说明 / 附件排序”补齐。
+- 现在缺的不是继续跑同类实验，而是把“题库说明 / 原型说明 / 试用方案 / 附件排序”补齐。
