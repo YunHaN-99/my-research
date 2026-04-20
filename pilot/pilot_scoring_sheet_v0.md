@@ -11,7 +11,12 @@
 - `session_stage`：`internal_dry_run / formal_pilot`
 - `scorer_id`：
 
-## 2. 评分项
+## 2. 使用规则
+- 正式分数只在本表填写；`participant notes` 和 `session_record` 只保留证据，不重复打分。
+- 建议评分前先核对 `participant_form`、`participant_submission`、最终代码路径，以及 `process_guided_workflow` 下的 notes 是否齐全。
+- 若某项确实不适用，统一填 `NA`，不要留空。
+
+## 3. 评分项
 
 ### completion_status
 - `0` = 未完成核心任务
@@ -44,11 +49,11 @@
 - `2` = 明确写出至少一个回归检查点或验证样例
 
 ### artifact_completeness
-- `0` = 核心产物缺失
-- `1` = 有部分产物，但记录不完整
-- `2` = 代码 / 说明 / 记录三者基本齐全
+- `0` = `participant_form`、`participant_submission`、最终代码路径、`session_record`、`scoring_sheet` 中缺核心项
+- `1` = 核心代码已提交，但路径、说明或研究者记录仍有缺件
+- `2` = `participant_form`、`participant_submission`、最终代码路径、`session_record`、`scoring_sheet` 基本齐全；若为 `process_guided_workflow`，notes 也已齐全
 
-## 3. 汇总表
+## 4. 汇总表
 
 | 字段 | 分值 |
 |---|---|
@@ -64,3 +69,4 @@
 - 本次最明显的优点：
 - 本次最明显的缺口：
 - 是否更像 `baseline_workflow` 或 `process_guided_workflow` 的典型表现：
+- 评分依据补充：

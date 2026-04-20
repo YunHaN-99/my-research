@@ -46,6 +46,19 @@
 - `1` 行测试用 CSV
 - `1` 份 dry run 发现与修改记录
 
+## 最近一次执行
+- 已于 `2026-04-20` 完成 `1` 次实际 dry run：
+  - `session_id`：`PILOT_20260420_000`
+  - `task_id`：`T2_A1_bug_01`
+  - `condition`：`process_guided_workflow`
+- 汇总结果见：`report/pilot_internal_dry_run_result_2026-04-20.md`
+- 记录包见：`pilot/dry_run_records/PILOT_20260420_000/`
+- CSV 记录见：`metrics/pilot_session_log_dry_run_v0.csv`
+- 本次 dry run 暴露并已修复的模板问题：
+  - notes template 补上了 `session_id`
+  - notes template 补上了“最终提交代码路径 / 文件名”
+  - participant form 补上了前测 / 后测填写时机提示
+
 ## 若暴露问题，优先处理顺序
 1. 先修字段缺失和重复评分。
 2. 再修填写顺序和命名歧义。

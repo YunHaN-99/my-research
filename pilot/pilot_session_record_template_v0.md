@@ -26,7 +26,19 @@
 - 结束时间：
 - 总时长（分钟）：
 
-## 4. 过程观察
+## 4. 回收产物位置
+本节先把回收或落盘后的路径记清楚，再做评分和 CSV 回填。
+
+- `participant_form_path`：
+- `participant_submission_path`：
+- 若为 `process_guided_workflow`，`participant_notes_path`：
+- `final_code_path`：
+- `verification_or_output_path`：
+- 其他附件：
+
+## 5. 过程观察
+这里只记观察和介入情况，不在本表重复填写正式分数。
+
 - 参与者是否先做输入 / 输出澄清：
 - 是否出现显式自检：
 - 是否主动解释关键原因或关键步骤：
@@ -34,23 +46,19 @@
 - 求助次数：
 - 研究者介入说明：
 
-## 5. 产物位置
-- 代码路径：
-- 截图 / 输出路径：
-- run 记录路径：
-- 其他附件：
-
-## 6. 回填摘要
+## 6. 评分与回填
 - `scoring_sheet_path`：
 - `csv_backfill_status`：`not_started / draft / completed`
 - `artifact_paths_checked`：`yes / no`
-- 若本次为 `internal_dry_run`，记录本轮暴露出来的问题：
-  - 字段是否缺失：
-  - 是否存在重复评分项：
-  - 哪个步骤最难操作：
-  - 对模板的修改建议：
+- 正式分数是否已只写入 `scoring_sheet`：`yes / no`
 
-## 7. 研究者备注
+## 7. 若本次为 `internal_dry_run`，记录本轮暴露出来的问题
+- 字段是否缺失：
+- 是否存在重复评分项：
+- 哪个步骤最难操作：
+- 对模板的修改建议：
+
+## 8. 研究者备注
 - 本次 session 最值得保留的观察：
 - 本次 session 最值得改进的地方：
 - 若下一轮继续跑，应调整什么：

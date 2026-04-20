@@ -30,6 +30,6 @@
 - 观测区约束和低秩分量回写不能丢。
 
 ## 交付物提醒
-- diagnosis：一句话主错误定位 + 简短原因说明
+- final submission：按 `pilot/pilot_participant_submission_template_v0.md` 留下 diagnosis、最终代码路径和 regression notes
 - patched code：最小修补版本
-- regression notes：至少一条最小回归说明
+- 若是 `process_guided_workflow`，notes template 保留过程痕迹，不替代最终 submission

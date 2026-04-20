@@ -13,7 +13,7 @@
 
 | slot | 建议 session_id | session_stage | task_id | condition | participant_id | 日期 | 时间 | 备注 |
 |---|---|---|---|---|---|---|---|---|
-| DRY-01 | `PILOT_YYYYMMDD_000` | `internal_dry_run` | `T2_A1_bug_01` 或 `T3_A2_bug_01` | `process_guided_workflow` | `SELF` / `PX` | 待填 | 待填 | 先验证表单、记录和 CSV 回填链路 |
+| DRY-01 | `PILOT_20260420_000` | `internal_dry_run` | `T2_A1_bug_01` | `process_guided_workflow` | `SELF` | `2026-04-20` | `14:05-14:22` | 已完成；记录见 `report/pilot_internal_dry_run_result_2026-04-20.md` |
 | S01 | `PILOT_YYYYMMDD_001` | `formal_pilot` | `T2_A1_bug_01` | `baseline_workflow` | `P01` | 待填 | 待填 | A1 bug_01 的 baseline 对照 |
 | S02 | `PILOT_YYYYMMDD_002` | `formal_pilot` | `T2_A1_bug_01` | `process_guided_workflow` | `P02` | 待填 | 待填 | A1 bug_01 的 process-guided 对照 |
 | S03 | `PILOT_YYYYMMDD_003` | `formal_pilot` | `T3_A2_bug_01` | `baseline_workflow` | `P03` | 待填 | 待填 | A2 bug_01 的 baseline 对照 |
@@ -27,7 +27,7 @@
 - `5` 分钟：研究者补 session record、scoring sheet 和 CSV 草稿
 
 ## 执行前检查
-- dry run 已完成，且字段和评分口径没有未决冲突
+- dry run 已完成，记录见 `report/pilot_internal_dry_run_result_2026-04-20.md`
 - `session_stage` 已按 `internal_dry_run / formal_pilot` 区分
 - 每个 session 的任务包已经提前放到独立文件夹或独立压缩包
 - 不向参与者暴露 `diagnosis.md`、`fixed_code.py` 和既有 generated answers

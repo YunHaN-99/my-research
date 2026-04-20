@@ -4,6 +4,7 @@
 给 `process_guided_workflow` 条件下的参与者一张简短记录纸，用来留下最基本的过程痕迹，便于后续评分和 CSV 回填。
 
 ## 基本信息
+- `session_id`：
 - `participant_id`：
 - `task_id`：
 - `condition`：`process_guided_workflow`
@@ -27,4 +28,5 @@
 
 ## 5. 结果备注
 - 当前 patch 是否已能运行：
+- 最终提交代码路径 / 文件名：
 - 仍不确定的地方：

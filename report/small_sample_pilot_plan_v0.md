@@ -4,12 +4,12 @@
 把 Timeline 后续要做的“小范围试用”先冻结成一套可执行的 `v0` 方案，重点不是马上开始招募，而是先把试用问题、任务池、表单、评分表、记录模板和数据结构定下来。
 
 ## 1. 当前定位
-- 当前还没有开始实际招募、正式试用和数据采集。
+- 当前还没有开始正式招募和正式 pilot 数据采集，但已完成 `1` 次内部 dry run。
 - 这份文档的作用是先把“baseline vs 过程化流程”的试用方案定住。
 - 首轮正式试用的顺序已经收束为“先 bug-repair，后 implementation”。
-- 在正式首轮之前，先做 `1` 次内部 dry run，验证表单、评分表、session record 和 CSV 回填链路是否顺手。
+- 已于 `2026-04-20` 用 `T2_A1_bug_01 + process_guided_workflow` 完成 `1` 次内部 dry run，并据此修过 notes template 与 participant form 的操作提示。
 - 中期阶段最稳的说法应是：
-  - 小样本试用方案已定，表单、评分表、记录模板和 CSV 数据结构已预埋；实际招募与数据采集放到中期后执行。
+  - 小样本试用方案已定，已完成 `1` 次内部 dry run 验证记录链路；正式招募与数据采集放到中期后执行。
 
 ## 2. 试用要回答什么
 当前小样本试用不追求证明“过程化流程显著提高最终算法指标”，而是优先观察下面这些更贴近当前证据的结果：
@@ -82,6 +82,10 @@
   - 哪些步骤最难操作
   - 回填 CSV 时是否需要反复翻原始记录
   - `internal_dry_run / formal_pilot` 的区分是否清楚
+- 已完成样例：
+  - `report/pilot_internal_dry_run_result_2026-04-20.md`
+  - `pilot/dry_run_records/PILOT_20260420_000/`
+  - `metrics/pilot_session_log_dry_run_v0.csv`
 
 ## 8. 单次试用流程
 每次 session 建议控制在 `35` 到 `50` 分钟内：
@@ -117,6 +121,7 @@
 ## 10. 当前已经落地的试用材料
 - 方案文档：`report/small_sample_pilot_plan_v0.md`
 - 内部 dry run 说明：`report/pilot_internal_dry_run_v0.md`
+- 内部 dry run 结果：`report/pilot_internal_dry_run_result_2026-04-20.md`
 - 首轮排班表：`report/pilot_round1_schedule_v0.md`
 - 首轮任务包清单：`report/pilot_round1_task_pack_checklist_v0.md`
 - 参与者表单：`pilot/pilot_participant_form_v0.md`
@@ -125,15 +130,18 @@
 - 评分表：`pilot/pilot_scoring_sheet_v0.md`
 - 记录模板：`pilot/pilot_session_record_template_v0.md`
 - CSV 数据骨架：`metrics/pilot_session_log_template_v0.csv`
+- dry run CSV：`metrics/pilot_session_log_dry_run_v0.csv`
 - CSV codebook：`metrics/pilot_session_log_codebook_v0.md`
 
 ## 11. 中期推荐写法
 建议中期材料写成：
 
 > Timeline 后续要求的小样本试用目前尚未开始实际招募，但 baseline vs 过程化流程的 `v0` 试用方案已经冻结，任务池、参与者表单、评分表、记录模板与 CSV 数据结构均已预埋，因此中期之后可以直接进入小范围试用执行。
+>
+> 若写当前更新后的状态，可进一步补一句：`2026-04-20` 已完成 `1` 次内部 dry run，并据此修过 notes template 与 participant form 的操作提示。
 
 ## 12. 下一步最小动作
-1. 正式首轮前先做 `1` 次内部 dry run，完整走通 `participant_form -> session_record -> scoring_sheet -> CSV`。
+1. 用 dry run 修过的模板准备首轮 `4` 人 formal pilot 的 participant pack 和 researcher pack。
 2. 中期后先用 `T2_A1_bug_01` 和 `T3_A2_bug_01` 跑首轮 `4` 人试用。
-3. 试用结束后先回填 `metrics/pilot_session_log_template_v0.csv` 的正式版本，并记录模板是否还需微调。
+3. 试用结束后先回填正式 session log，并记录模板是否还需微调。
 4. 若首轮可行，再补 `T1_A1_width` 并完善对照说明。

@@ -8,6 +8,14 @@
 - 不向参与者暴露任何 `diagnosis.md`、`fixed_code.py`、既有 `patched_code.py`、`prompt_used.md`、`model_raw_response.md`。
 - `session_record`、`scoring_sheet`、CSV 模板属于研究者侧材料，不属于 participant pack。
 - `process_guided_workflow` 比 `baseline_workflow` 只多给 task card 摘要、最小 checklist 和 notes template，不多给 gold answer。
+- 发放前研究者先在 participant-visible 模板里预填 `session_id`、`task_id`、`condition`、`session_stage`。
+- 每个 session 建议先建独立目录，并固定使用以下落盘命名：
+  - `participant_form_filled.md`
+  - `participant_submission.md`
+  - `participant_notes_filled.md`（仅 `process_guided_workflow`）
+  - `session_record_filled.md`
+  - `scoring_sheet_filled.md`
+  - `src/`
 
 ## 研究者通用底包
 每个 session 都要提前备好以下研究者侧文件：
@@ -34,15 +42,18 @@
   - `task_cards/A2_bug_repair_taskcard_v0.md`
 - 通用：
   - `pilot/pilot_participant_form_v0.md`
+  - `pilot/pilot_participant_submission_template_v0.md`
   - `pilot/pilot_bug_repair_checklist_v0.md`
   - `pilot/pilot_bug_repair_notes_template_v0.md`
 
 ### 结束后必须回收
 - participant form
+- participant submission
 - notes template
 - session record
 - scoring sheet
 - `1` 行带 `internal_dry_run` 的 CSV 草稿
+- 最终代码路径与最小验证产物路径
 
 ## S01: `T2_A1_bug_01` + `baseline_workflow`
 
@@ -50,6 +61,7 @@
 - `solutions/hw1_op1/failure_cases/bug_01_dp_boundary/symptom.md`
 - `solutions/hw1_op1/failure_cases/bug_01_dp_boundary/buggy_code.py`
 - `pilot/pilot_participant_form_v0.md`
+- `pilot/pilot_participant_submission_template_v0.md`
 
 ### 研究者内部参考
 - `report/a1_bug_repair_protocol_v0.md`
@@ -64,10 +76,12 @@
 
 ### 结束后必须回收
 - participant form
+- participant submission
 - session record
 - scoring sheet
 - CSV 草稿
-- 参与者产物路径
+- 最终代码路径
+- 最小验证或输出路径
 
 ## S02: `T2_A1_bug_01` + `process_guided_workflow`
 
@@ -79,6 +93,7 @@
 - `pilot/pilot_bug_repair_checklist_v0.md`
 - `pilot/pilot_bug_repair_notes_template_v0.md`
 - `pilot/pilot_participant_form_v0.md`
+- `pilot/pilot_participant_submission_template_v0.md`
 
 ### 研究者内部参考
 - `report/a1_bug_repair_protocol_v0.md`
@@ -92,11 +107,13 @@
 
 ### 结束后必须回收
 - participant form
+- participant submission
 - notes template
 - session record
 - scoring sheet
 - CSV 草稿
-- 参与者产物路径
+- 最终代码路径
+- 最小验证或输出路径
 
 ## S03: `T3_A2_bug_01` + `baseline_workflow`
 
@@ -104,6 +121,7 @@
 - `solutions/hw2_op2/failure_cases/bug_01_missing_mask_constraint/symptom.md`
 - `solutions/hw2_op2/failure_cases/bug_01_missing_mask_constraint/buggy_code.py`
 - `pilot/pilot_participant_form_v0.md`
+- `pilot/pilot_participant_submission_template_v0.md`
 
 ### 研究者内部参考
 - `report/a2_bug_repair_protocol_v0.md`
@@ -118,10 +136,12 @@
 
 ### 结束后必须回收
 - participant form
+- participant submission
 - session record
 - scoring sheet
 - CSV 草稿
-- 参与者产物路径
+- 最终代码路径
+- 最小验证或输出路径
 
 ## S04: `T3_A2_bug_01` + `process_guided_workflow`
 
@@ -133,6 +153,7 @@
 - `pilot/pilot_bug_repair_checklist_v0.md`
 - `pilot/pilot_bug_repair_notes_template_v0.md`
 - `pilot/pilot_participant_form_v0.md`
+- `pilot/pilot_participant_submission_template_v0.md`
 
 ### 研究者内部参考
 - `report/a2_bug_repair_protocol_v0.md`
@@ -146,8 +167,10 @@
 
 ### 结束后必须回收
 - participant form
+- participant submission
 - notes template
 - session record
 - scoring sheet
 - CSV 草稿
-- 参与者产物路径
+- 最终代码路径
+- 最小验证或输出路径

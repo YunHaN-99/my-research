@@ -15,7 +15,8 @@
 - 导师演示入口已补出：`python run_research_case.py --demo advisor` 会按“输入题目 -> 结构化表示 -> prompt 选择 -> run 结果 -> metrics 摘要”输出固定演示链条。
 - 小样本试用方案已冻结：baseline vs 过程化流程的 `v0` 试用方案、参与者表单、session record、评分表和 CSV 数据结构已预埋。
 - 首轮 pilot 的执行顺序已收束：中期后先跑 `T2_A1_bug_01` 和 `T3_A2_bug_01` 的 `4` 人 bug-repair 小样本，不先铺开 implementation 和全部任务。
-- 首轮正式招募前会先做一次内部 dry run，完整走 `participant_form -> session_record -> scoring_sheet -> CSV` 回填链路，优先检查字段是否够用、评分项是否重复、回填是否顺手。
+- 已完成 `1` 次内部 dry run：`2026-04-20` 用 `T2_A1_bug_01 + process_guided_workflow` 完整走通 `participant_form -> session_record -> scoring_sheet -> CSV` 回填链路。
+- dry run 后已把 notes template 补上 `session_id` 和最终代码路径，并给 participant form 补了前测 / 后测填写时机提示。
 - 首轮 `4` 人 pilot 的排班表、任务包清单，以及 process-guided 条件下要发放的 bug-repair checklist / notes template 已补出。
 - 当前中期重点不是继续追加同类 rerun，而是收束模板库、检查清单、错误分类、题库页和原型入口。
 
@@ -60,6 +61,7 @@
 - [report/advisor_demo_entry_v1.md](report/advisor_demo_entry_v1.md)
 - [report/small_sample_pilot_plan_v0.md](report/small_sample_pilot_plan_v0.md)
 - [report/pilot_internal_dry_run_v0.md](report/pilot_internal_dry_run_v0.md)
+- [report/pilot_internal_dry_run_result_2026-04-20.md](report/pilot_internal_dry_run_result_2026-04-20.md)
 - [report/pilot_round1_schedule_v0.md](report/pilot_round1_schedule_v0.md)
 - [report/pilot_round1_task_pack_checklist_v0.md](report/pilot_round1_task_pack_checklist_v0.md)
 - [report/advisor_confirmation_questions_v0.md](report/advisor_confirmation_questions_v0.md)
@@ -77,6 +79,7 @@
 - [metrics/a2_expanded_scope_eval_v0.csv](metrics/a2_expanded_scope_eval_v0.csv)
 - [metrics/a2_expanded_scope_perf_v0.csv](metrics/a2_expanded_scope_perf_v0.csv)
 - [metrics/pilot_session_log_template_v0.csv](metrics/pilot_session_log_template_v0.csv)
+- [metrics/pilot_session_log_dry_run_v0.csv](metrics/pilot_session_log_dry_run_v0.csv)
 - [metrics/pilot_session_log_codebook_v0.md](metrics/pilot_session_log_codebook_v0.md)
 
 ## 仓库结构
@@ -102,7 +105,7 @@ task_cards / prompts / runs / metrics / report / pilot / solutions / outputs / r
 - 输出位置：[outputs/hw1_op1](outputs/hw1_op1)
 
 ## 下一步
-1. 先做 `1` 次内部 dry run，用 `participant_form / session_record / scoring_sheet / CSV` 跑通整条试用记录链路，并据此微调字段与评分口径。
+1. 用 dry run 修过的模板准备首轮 `4` 人 formal pilot 的任务包和记录包。
 2. 中期后首轮只跑 `T2_A1_bug_01` 和 `T3_A2_bug_01`，按 `baseline_workflow / process_guided_workflow` 各 `1` 次组成 `4` 人小样本。
-3. 首轮 `4` 人试用完成后，先回填正式 session log，再根据 dry run 和首轮反馈决定是否把 `T1_A1_width` 纳入下一轮。
+3. 首轮 `4` 人试用完成后，先回填正式 session log，再根据首轮反馈决定是否把 `T1_A1_width` 纳入下一轮。
 4. 更后续再推进 A3 / A4 首发条目、统一原型封装和更大范围试用。

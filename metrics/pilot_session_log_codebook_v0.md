@@ -100,7 +100,12 @@
   - 特殊情况
 
 ### artifact_paths
-- 记录代码、截图、run 文档等相对路径
+- 记录相对路径，建议至少包含：
+  - `participant_form`
+  - `participant_submission`
+  - 最终代码文件
+  - `scoring_sheet`
+- 若有 `process_guided_workflow` 的 notes、`session_record`、验证脚本或输出，也一并写入
 
 ## 填表规则
 - 先保留原始表单和 session record，再回填 CSV。
