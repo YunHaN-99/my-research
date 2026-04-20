@@ -13,7 +13,10 @@
 - A3 / A4 已各冻结 `1` 个首发条目，并补齐 `requirement + taskcard_v1`，当前可诚实表述为“主案例已闭环，题库主干已成型，中期题库已补到够用版本”。
 - 最小 CLI 原型已建立：`python run_research_case.py --case A2 --mode plain_guidance --track baseline` 可直接输出 prompt、protocol、run 文档和 metrics 摘要。
 - 导师演示入口已补出：`python run_research_case.py --demo advisor` 会按“输入题目 -> 结构化表示 -> prompt 选择 -> run 结果 -> metrics 摘要”输出固定演示链条。
-- 小样本试用方案已冻结：baseline vs 过程化流程的 `v0` 试用方案、参与者表单、评分表、记录模板和 CSV 数据结构已预埋。
+- 小样本试用方案已冻结：baseline vs 过程化流程的 `v0` 试用方案、参与者表单、session record、评分表和 CSV 数据结构已预埋。
+- 首轮 pilot 的执行顺序已收束：中期后先跑 `T2_A1_bug_01` 和 `T3_A2_bug_01` 的 `4` 人 bug-repair 小样本，不先铺开 implementation 和全部任务。
+- 首轮正式招募前会先做一次内部 dry run，完整走 `participant_form -> session_record -> scoring_sheet -> CSV` 回填链路，优先检查字段是否够用、评分项是否重复、回填是否顺手。
+- 首轮 `4` 人 pilot 的排班表、任务包清单，以及 process-guided 条件下要发放的 bug-repair checklist / notes template 已补出。
 - 当前中期重点不是继续追加同类 rerun，而是收束模板库、检查清单、错误分类、题库页和原型入口。
 
 ## 当前冻结的研究结论
@@ -56,8 +59,13 @@
 - [report/prototype_cli_v0.md](report/prototype_cli_v0.md)
 - [report/advisor_demo_entry_v1.md](report/advisor_demo_entry_v1.md)
 - [report/small_sample_pilot_plan_v0.md](report/small_sample_pilot_plan_v0.md)
+- [report/pilot_internal_dry_run_v0.md](report/pilot_internal_dry_run_v0.md)
+- [report/pilot_round1_schedule_v0.md](report/pilot_round1_schedule_v0.md)
+- [report/pilot_round1_task_pack_checklist_v0.md](report/pilot_round1_task_pack_checklist_v0.md)
 - [report/advisor_confirmation_questions_v0.md](report/advisor_confirmation_questions_v0.md)
 - [pilot/pilot_participant_form_v0.md](pilot/pilot_participant_form_v0.md)
+- [pilot/pilot_bug_repair_checklist_v0.md](pilot/pilot_bug_repair_checklist_v0.md)
+- [pilot/pilot_bug_repair_notes_template_v0.md](pilot/pilot_bug_repair_notes_template_v0.md)
 - [pilot/pilot_scoring_sheet_v0.md](pilot/pilot_scoring_sheet_v0.md)
 - [pilot/pilot_session_record_template_v0.md](pilot/pilot_session_record_template_v0.md)
 - [metrics/a1_guidance_eval_v0.csv](metrics/a1_guidance_eval_v0.csv)
@@ -94,7 +102,7 @@ task_cards / prompts / runs / metrics / report / pilot / solutions / outputs / r
 - 输出位置：[outputs/hw1_op1](outputs/hw1_op1)
 
 ## 下一步
-1. 把导师确认的三问发出去，尽快锁定 A2 口径、中期主轴和中期后优先级。
-2. 以当前 `16` 个正式题库条目作为中期版本，优先把题库页、模板库、检查清单、错误分类和附件包收齐。
-3. 小样本试用方案已冻结，下一步是在中期后按这套模板执行首轮 pilot，并回填 session 记录与 CSV。
-4. 中期后再给 A3 / A4 首发条目补固定协议、failure case 与实验链路。
+1. 先做 `1` 次内部 dry run，用 `participant_form / session_record / scoring_sheet / CSV` 跑通整条试用记录链路，并据此微调字段与评分口径。
+2. 中期后首轮只跑 `T2_A1_bug_01` 和 `T3_A2_bug_01`，按 `baseline_workflow / process_guided_workflow` 各 `1` 次组成 `4` 人小样本。
+3. 首轮 `4` 人试用完成后，先回填正式 session log，再根据 dry run 和首轮反馈决定是否把 `T1_A1_width` 纳入下一轮。
+4. 更后续再推进 A3 / A4 首发条目、统一原型封装和更大范围试用。

@@ -8,6 +8,7 @@
 - `participant_id`：
 - `task_id`：
 - `condition`：`baseline_workflow / process_guided_workflow`
+- `session_stage`：`internal_dry_run / formal_pilot`
 - `scorer_id`：
 
 ## 2. 评分项

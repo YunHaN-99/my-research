@@ -9,6 +9,7 @@
 - `participant_id`：
 - `task_id`：
 - `condition`：`baseline_workflow / process_guided_workflow`
+- `session_stage`：`internal_dry_run / formal_pilot`
 - 研究者 / 记录者：
 
 ## 2. 发放材料
@@ -39,14 +40,15 @@
 - run 记录路径：
 - 其他附件：
 
-## 6. 结果摘要
-- `completion_status`：
-- `runnable`：
-- `outcome_quality`：
-- `self_check_coverage`：
-- `root_cause_explanation`：
-- `regression_plan_quality`：
-- `artifact_completeness`：
+## 6. 回填摘要
+- `scoring_sheet_path`：
+- `csv_backfill_status`：`not_started / draft / completed`
+- `artifact_paths_checked`：`yes / no`
+- 若本次为 `internal_dry_run`，记录本轮暴露出来的问题：
+  - 字段是否缺失：
+  - 是否存在重复评分项：
+  - 哪个步骤最难操作：
+  - 对模板的修改建议：
 
 ## 7. 研究者备注
 - 本次 session 最值得保留的观察：

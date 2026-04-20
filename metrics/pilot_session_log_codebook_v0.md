@@ -29,6 +29,12 @@
   - `baseline_workflow`
   - `process_guided_workflow`
 
+### session_stage
+- 允许值：
+  - `internal_dry_run`
+  - `formal_pilot`
+- 内部 dry run 建议保留记录，但后续汇总正式 pilot 时应先过滤掉 `internal_dry_run`
+
 ### task_type
 - 允许值：
   - `implementation`
@@ -99,4 +105,5 @@
 ## 填表规则
 - 先保留原始表单和 session record，再回填 CSV。
 - 同一 session 只保留一行主记录。
+- 评分相关字段以 `pilot/pilot_scoring_sheet_v0.md` 为准；`session_record` 主要保留过程观察、介入说明和回填备注。
 - 如果某个评分项不适用，不要留空，统一填 `NA`。

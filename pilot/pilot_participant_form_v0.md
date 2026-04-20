@@ -9,6 +9,7 @@
 - 日期：
 - `task_id`：
 - `condition`：`baseline_workflow / process_guided_workflow`
+- `session_stage`：`internal_dry_run / formal_pilot`
 
 ## 2. 试用前背景项
 请按 `1` 到 `5` 打分，`1` 表示非常不熟悉，`5` 表示非常熟悉。
