@@ -19,6 +19,11 @@
 | S03 | `PILOT_YYYYMMDD_003` | `formal_pilot` | `T3_A2_bug_01` | `baseline_workflow` | `P03` | 待填 | 待填 | A2 bug_01 的 baseline 对照 |
 | S04 | `PILOT_YYYYMMDD_004` | `formal_pilot` | `T3_A2_bug_01` | `process_guided_workflow` | `P04` | 待填 | 待填 | A2 bug_01 的 process-guided 对照 |
 
+补充说明：
+- 当前已冻结的是 `S01` 到 `S04` 的任务顺序、条件分配和 task pack。
+- `session_id`、日期、时间仍待按真实招募结果回填，不在仓库里虚填。
+- 四个 formal pilot 的独立 task pack 已预建在 `pilot/formal_pilot_task_packs/`。
+
 ## 每个 session 的时间预算
 - `5` 分钟：填写 participant form 的基本信息和背景项
 - `3` 分钟：发放任务包并说明条件
@@ -29,7 +34,7 @@
 ## 执行前检查
 - dry run 已完成，记录见 `report/pilot_internal_dry_run_result_2026-04-20.md`
 - `session_stage` 已按 `internal_dry_run / formal_pilot` 区分
-- 每个 session 的任务包已经提前放到独立文件夹或独立压缩包
+- 每个 session 的任务包已预建在 `pilot/formal_pilot_task_packs/`；若线下发放，再按 session 目录直接打包
 - 不向参与者暴露 `diagnosis.md`、`fixed_code.py` 和既有 generated answers
 
 ## 首轮完成标准

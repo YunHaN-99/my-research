@@ -16,6 +16,12 @@
   - `session_record_filled.md`
   - `scoring_sheet_filled.md`
   - `src/`
+- 当前预建的 formal pilot task pack 根目录：`pilot/formal_pilot_task_packs/`
+- 若只看“发给参与者的版本”，直接使用：
+  - `pilot/formal_pilot_task_packs/S01/`
+  - `pilot/formal_pilot_task_packs/S02/`
+  - `pilot/formal_pilot_task_packs/S03/`
+  - `pilot/formal_pilot_task_packs/S04/`
 
 ## 研究者通用底包
 每个 session 都要提前备好以下研究者侧文件：
@@ -57,6 +63,9 @@
 
 ## S01: `T2_A1_bug_01` + `baseline_workflow`
 
+- 预打包目录：`pilot/formal_pilot_task_packs/S01_T2_A1_bug_01_baseline_workflow/`
+- 直接发给参与者的简化目录：`pilot/formal_pilot_task_packs/S01/`
+
 ### 参与者可见
 - `solutions/hw1_op1/failure_cases/bug_01_dp_boundary/symptom.md`
 - `solutions/hw1_op1/failure_cases/bug_01_dp_boundary/buggy_code.py`
@@ -84,6 +93,9 @@
 - 最小验证或输出路径
 
 ## S02: `T2_A1_bug_01` + `process_guided_workflow`
+
+- 预打包目录：`pilot/formal_pilot_task_packs/S02_T2_A1_bug_01_process_guided_workflow/`
+- 直接发给参与者的简化目录：`pilot/formal_pilot_task_packs/S02/`
 
 ### 参与者可见
 - `solutions/hw1_op1/failure_cases/bug_01_dp_boundary/symptom.md`
@@ -117,6 +129,9 @@
 
 ## S03: `T3_A2_bug_01` + `baseline_workflow`
 
+- 预打包目录：`pilot/formal_pilot_task_packs/S03_T3_A2_bug_01_baseline_workflow/`
+- 直接发给参与者的简化目录：`pilot/formal_pilot_task_packs/S03/`
+
 ### 参与者可见
 - `solutions/hw2_op2/failure_cases/bug_01_missing_mask_constraint/symptom.md`
 - `solutions/hw2_op2/failure_cases/bug_01_missing_mask_constraint/buggy_code.py`
@@ -144,6 +159,9 @@
 - 最小验证或输出路径
 
 ## S04: `T3_A2_bug_01` + `process_guided_workflow`
+
+- 预打包目录：`pilot/formal_pilot_task_packs/S04_T3_A2_bug_01_process_guided_workflow/`
+- 直接发给参与者的简化目录：`pilot/formal_pilot_task_packs/S04/`
 
 ### 参与者可见
 - `solutions/hw2_op2/failure_cases/bug_01_missing_mask_constraint/symptom.md`
